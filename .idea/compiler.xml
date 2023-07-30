@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kaelvihn-model" />
+        <module name="kaelvihn-order-service" />
+        <module name="kaelvihn-feign" />
+        <module name="kaelvihn-user-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gateway" target="1.8" />
+      <module name="kaelvihn-gateway" target="17" />
+      <module name="orderGateway" target="1.5" />
+      <module name="userGateway" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kaelvihn-feign" options="-parameters" />
+      <module name="kaelvihn-model" options="-parameters" />
+      <module name="kaelvihn-order-service" options="-parameters" />
+      <module name="kaelvihn-service" options="" />
+      <module name="kaelvihn-user-service" options="-parameters" />
+    </option>
+  </component>
+</project>
